@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Favorite Cusine Survey</title>
+</head>
+<body>
+
+  <h2>Favorite Food Survey</h2>
+  <form action="/submit-survey" method="POST">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="10" max="40"><br><br>
+
+    
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female
+    <input type="radio" id="others" name="gender" value="others">
+    <label for="others">others</label>
+    </label><br><br>
+
+    <label for="food">Favorite Cusine:</label>
+    <select id="food" name="favorite_food" >
+      <option value="">Choose Your  Cusine here</option>
+      <option value="Pizza">Pizza</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Indian">Indian</option>
+      <option value="Mexican">Mexican</option>
+      <option value="Italian">Italian</option>
+    </select><br><br>
+
+    
+    <input type="checkbox" id="cook" name="likes_to_cook" value="Yes">
+    <label for="cook">Do you like to cook?</label><br><br>
+
+    
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="9" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</body>
+</html>
